@@ -3,61 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hexert – Leadership</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Lesley Tsoka | Portfolio</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #1e293b;
+            --light: #f8fafc;
+        }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--light); color: var(--dark); line-height: 1.6; }
+        header { background: var(--dark); color: white; padding: 60px 20px; text-align: center; }
+        .container { max-width: 1000px; margin: auto; padding: 20px; }
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 4px solid var(--primary); object-fit: cover; }
+        .section-title { border-bottom: 3px solid var(--primary); display: inline-block; margin-bottom: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .skills-list { list-style: none; padding: 0; }
+        .skills-list li { background: #e2e8f0; margin: 5px 0; padding: 8px; border-radius: 4px; font-size: 0.9rem; }
+        .badge { background: var(--primary); color: white; padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; }
+        footer { text-align: center; padding: 40px; background: #f1f5f9; font-size: 0.9rem; }
+    </style>
 </head>
 <body>
-    <!-- ===== NAVIGATION ===== -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">HEXERT</a>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="index.html#services" class="nav-link">Services</a></li>
-                <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
-                <li class="nav-item"><a href="leadership.html" class="nav-link active">Leadership</a></li>
+
+<header>
+    <img src="your-photo.jpg" alt="Lesley Michael Mufaro Tsoka" class="profile-img"> <h1>Lesley Michael Mufaro Tsoka</h1> <p>Software Engineer | Pilot | Businessman | Pastor</p> <p><i>"Devout Christian & Community Leader"</i></p> </header>
+
+<div class="container">
+    <section id="about">
+        <h2 class="section-title">Personal Profile</h2>
+        <p>I am a 16-year-old aspiring professional dedicated to excellence in technology, aviation, and ministry[cite: 3, 5]. Based in Brits, South Africa, I balance rigorous academic study with a passion for software engineering and community service[cite: 2, 21, 24].</p>
+    </section>
+
+    <div class="grid">
+        <section class="card">
+            <h3 class="section-title">Education</h3> <ul>
+                <li><strong>Xanadu School</strong> - High School (Gr 10-11) [cite: 7]</li>
+                <li><strong>Lingfield Boarding School</strong> - High School (Gr 8-9) [cite: 7]</li>
+                <li><strong>Lighthouse Christian College</strong> - Primary [cite: 7]</li>
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+        </section>
 
-    <!-- ===== LEADERSHIP HERO ===== -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Leadership at Hexert</h1>
-            <p>Celebrating vision, intelligence, and faith-driven guidance that inspire our team and clients alike.</p>
-        </div>
-    </section>
-
-    <!-- ===== HONORING LESLEY TSOKA ===== -->
-    <section class="about" id="honoring-lesley">
-        <div class="about-content">
-            <h2>Honoring Lesley Tsoka</h2>
-            <p>We proudly recognize the exceptional leadership and intelligence of <strong>Lesley Tsoka</strong>. His vision, wisdom, and dedication have profoundly inspired those around him, setting a standard of excellence and integrity in all endeavors. Through his guidance, innovation, and steadfast commitment, Lesley continues to make a meaningful impact on our community and beyond.</p>
-            <p>We also give thanks and praise to <strong>God</strong>, the source of all wisdom and understanding. It is through His divine guidance and blessings that leaders like Lesley are empowered to serve with insight, compassion, and purpose. May we continue to honor God in our actions and celebrate those who lead with both excellence and faith.</p>
-        </div>
-    </section>
-
-    <!-- ===== SOCIAL ICONS ===== -->
-    <div class="social">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
+        <section class="card">
+            <h3 class="section-title">Certifications</h3> <ul class="skills-list">
+                <li>Cyber-security (Google & Udemy) [cite: 29, 30]</li>
+                <li>HTML & CSS (Wacx Digital) [cite: 31]</li>
+                <li>Taekwondo Black Belt (TSAA) [cite: 34]</li>
+                <li>Basic Life Support (Aclanex) [cite: 36]</li>
+                <li>SDA Pathfinder & Scouting [cite: 32, 35]</li>
+            </ul>
+        </section>
     </div>
 
-    <!-- ===== FOOTER ===== -->
-    <footer class="footer">
-        <p>&copy; 2023 Hexert Cybersecurity. All rights reserved.</p>
-        <p>Made with <i class="fas fa-lock"></i> for a safer internet.</p>
-    </footer>
+    <section style="margin-top: 40px;">
+        <h2 class="section-title">Core Skills</h2> <div class="grid">
+            <div class="card">
+                <h4>Leadership & Strategy</h4>
+                <p>Proven ability to lead teams, delegate effectively, and maintain accountability[cite: 13, 14].</p>
+            </div>
+            <div class="card">
+                <h4>Technical Solving</h4>
+                <p>Identifying root causes and implementing efficient systems and processes[cite: 15, 16].</p>
+            </div>
+            <div class="card">
+                <h4>Communication</h4>
+                <p>Explaining complex ideas simply to diverse audiences[cite: 9, 10].</p>
+            </div>
+        </div>
+    </section>
 
-    <script src="script.js"></script>
+    <section style="margin-top: 40px;">
+        <h2 class="section-title">Interests</h2> <p>
+            <span class="badge">Grand Piano</span> <span class="badge">Coding</span> <span class="badge">Martial Arts</span> <span class="badge">Hiking</span> <span class="badge">Photography</span> </p>
+    </section>
+</div>
+
+<footer>
+    <p>Contact: lesleytsoka3129@outlook.com | Brits, South Africa</p> <p><a href="https://hexertcyber.ct.ws">Visit My Live Portfolio</a></p> </footer>
+
 </body>
 </html>
